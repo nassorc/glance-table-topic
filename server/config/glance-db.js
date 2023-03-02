@@ -6,12 +6,13 @@ function makeGlanceDb({ makeDb }) {
         const {email, password} = userInfo
         try {
             const db = await makeDb()
-            await db
+            return await db
                 .collection('users')
                 .insertOne({
                     email,
                     password
                 })
+            
         }
         catch(err) {
             throw new Error(err)
