@@ -4,9 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/globals.css">
+    <link rel="stylesheet" href="/styles/dashboard.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <section class="side">
+        <div class="top">
+            <div class="logo-container p1">
+                <h1 class="logo-name">Glance</h1>
+            </div>
+        </div>
+
+        <div class="middle">
+            <div class="deck-container">
+                <div class="deck-header p1">
+                    <div class="item">
+                        <div>
+                            <div><i class="fa-sharp fa-solid fa-layer-group"></i></div>
+                            <div>Decks</div>
+                        </div>
+                        <div id="add-deck" class=""><i class="fa-sharp fa-solid fa-plus"></i></div>
+
+                    </div>
+                </div>
+                <div class="decklist">
+                    <div class="item p1">
+                        <div>
+                            <div><i class="fa-solid fa-caret-right"></i></div>
+                            <span>Interview question</span>
+                        </div>
+                        
+                        <div class="item-buttons">
+                            <div class="item-button"><i class="fa-sharp fa-solid fa-plus"></i></div>
+                            <div class="item-button"><i class="fa-sharp fa-solid fa-trash"></i></div>
+                        </div>
+                    </div>
+                    <div class="item p1">
+                        <div>
+                            <div><i class="fa-solid fa-caret-right"></i></div>
+                            <span>Interview question</span>
+                        </div>
+                        
+                        <div class="item-buttons">
+                            <div class="item-button"><i class="fa-sharp fa-solid fa-plus"></i></div>
+                            <div class="item-button"><i class="fa-sharp fa-solid fa-trash"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- 
+        <div class="bottom">
+            <div>
+                <div>Logout</div>
+            </div>
+        </div> -->
+    </section>
+
+    <main class="main">
+        <div class="card-container"><h2 class="card-name">Variables</h2></div>
+        <div class="card-counter">
+            5/10
+        </div>
+        <div class="timer-container">
+            <div class="hour">00</div>
+            <div class="time-seperator">:</div>
+            <div class="minute">01</div>
+            <div class="time-seperator">:</div>
+            <div class="second">30</div>
+        </div>
+    </main>
 </body>
 </html>

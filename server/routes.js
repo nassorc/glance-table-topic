@@ -23,4 +23,8 @@ module.exports = (app) => {
     app.post('/login', (req, res) => {
         console.log(req.body)
     })
+
+    app.get('/dashboard', (req, res) => {
+        res.sendFile(path.join(__dirname, 'views', 'dashboard.html'))
+    })
 }
