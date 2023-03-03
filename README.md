@@ -1,6 +1,6 @@
-# Table Topic
+# Glance - Table Topic
 ---
-A JavaSript/express web application for practice speaking using the table topic exercise
+A JavaSript/express web application designed to help you practice speaking using the table topic speaking exercise. This web app is built using Node.js, epxress, and uses a MongoDB database to store user data. 
 
 # Setup
 ---
