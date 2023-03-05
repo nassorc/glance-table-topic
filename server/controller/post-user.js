@@ -1,4 +1,3 @@
-const {addUser} = require('../use-cases/add-user')
 function makePostUser({ addUser }) {
     return async function postUser(httpRequest) {
         try {
@@ -32,8 +31,4 @@ function makePostUser({ addUser }) {
     }
 }
 
-const postUser = makePostUser({addUser})
-
-module.exports = {
-    postUser
-}
+module.exports = makePostUser

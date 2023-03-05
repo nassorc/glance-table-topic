@@ -1,5 +1,4 @@
 const {makeUser} = require('../models/user')
-const db = require('../config/db')
 
 function makeAddUser(glanceDb) {
     return async function addUser(userInfo) {
@@ -12,8 +11,5 @@ function makeAddUser(glanceDb) {
     }
 }
 
-const addUser = makeAddUser(db)
 
-module.exports = {
-    addUser
-}
+module.exports = makeAddUser

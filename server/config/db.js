@@ -14,7 +14,6 @@ async function makeDb() {
 const makeGlanceDb = require('./glance-db.js')
 const glanceDb = makeGlanceDb({ makeDb })
 
-
 module.exports = glanceDb
 
 

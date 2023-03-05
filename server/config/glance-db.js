@@ -1,6 +1,7 @@
 function makeGlanceDb({ makeDb }) {
     return Object.freeze({
-        insert
+        insert,
+        findByEmail
     })
     async function insert({...userInfo}) {
         const {email, password} = userInfo
@@ -17,7 +18,18 @@ function makeGlanceDb({ makeDb }) {
         catch(err) {
             throw new Error(err)
         }
-    } 
+    }
+    async function findByEmail({email}) {
+        try {
+            const db = await makeDb()
+            return await db.collection('users')
+                .findOne({email: email})
+        }
+        catch (err) {
+            throw new Error(err)
+        }
+        
+    }
 }
 
 module.exports = makeGlanceDb

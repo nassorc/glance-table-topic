@@ -57,8 +57,12 @@ const auth = {
             body: JSON.stringify({email, password})
             
         })
-        .then((res) => res.json())
-        .then((data) => console.log(data))
+        .then((res) => {
+            console.log(res.status)
+            if(300 <= res.status < 400) {
+                window.location.href = '/dashboard'
+            }
+        })
     }, 
     showMessage: (e) => {
         const div = document.createElement('div')
